@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: 200%;
+    width: 100%;
+    height: 50vh;
+    background: #ffffff;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e44d26; /* Warna merah */
+}
+
+
+.detel{
+   margin-left: 8%;
+   margin-top: 12%;
+}
+
+.detel h1{
+    font-size: 50px;
+    counter-reset: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(35, 25, 167);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.images img{
+    height: 90%;
+    position: absolute;
+    left : 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .bgr{
+    bottom:20px;
+}
+
+.images:hover .bg{
+    left: 45%
+}
+
+
+#about {
+    background-color: #f0f8ff; /* Warna latar belakang biru muda */
+    padding: 100px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    color: #003366; /* Warna biru tua untuk judul */
+    font-size: 2.5em; /* Ukuran huruf yang lebih besar */
+    margin-bottom: 20px;
+}
+
+.about-text .line {
+    width: 180px;
+    height: 3px;
+    background-color: #003366; /* Warna biru tua untuk garis pemisah */
+    margin: 10px 0;
+}
+
+.about-text p {
+    color: #333; /* Warna teks biru tua */
+    font-size: 1.2em; /* Ukuran huruf yang lebih besar */
+    line-height: 1.6em; /* Jarak antar baris yang lebih baik */
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5); /* Bayangan biru tua */
+}
+
+#portofolio {
+    background-color: #ffffff; /* Warna latar belakang abu-abu muda */
+    padding: 30px;
+}
+
+.porto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.porto {
+    width: calc(33.33% - 20px); /* Tiga kolom, dikurangi margin */
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.porto img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
+    transition: transform 0.3s ease-out;
+}
+
+.porto:hover img {
+    transform: scale(1.1); /* Efek hover untuk memperbesar gambar */
+}
+
+.porto .layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.porto:hover .layer {
+    transform: translateY(0); /* Efek hover untuk menampilkan overlay */
+}
+
+#skills {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(50% - 20px); /* Dua kolom, dikurangi margin */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    height: auto;
+}
+
+#contact {
+    background-color: #f0f8ff; /* Warna latar belakang biru muda */
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.con-tact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-item-icon {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.contact-item-detail {
+    flex: 1;
+}
+
+.contact-item h4 {
+    color: #003366; /* Warna biru tua untuk judul */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #333; /* Warna teks biru tua */
+}
+
+.contact-item-icon svg {
+    fill: #003366; /* Warna biru tua untuk ikon */
+    width: 100%;
+    height: auto;
+}
+
+.contact-item:hover .contact-item-icon svg {
+    fill: #e44d26; /* Warna merah saat dihover */
+}
+
+.skills {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #003366; /* Warna biru tua untuk judul */
+    margin-bottom: 20px;
+}
+
+.title .line {
+    width: 100px;
+    height: 3px;
+    background-color: #003366; /* Warna biru tua untuk garis pemisah */
+    margin: 10px auto;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Efek hover untuk memperbesar kartu */
+}
+
+.card .ikon {
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    color: #003366; /* Warna biru tua untuk judul keterampilan */
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333; /* Warna teks biru tua */
+}
+
+
+#contact {
+    background-color: #fdfafa3d; /* Warna latar belakang biru muda */
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.con-tact {
+    text-align: center;
+}
+
+.con-tact h1 {
+    color: #003366; /* Warna biru tua untuk judul */
+    margin-bottom: 20px;
+}
+
+.con-tact .line {
+    width: 100px;
+    height: 3px;
+    background-color: #003366; /* Warna biru tua untuk garis pemisah */
+    margin: 10px auto;
+}
+
+.contant {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+}
+
+.contact-item .contact-item-icon {
+    margin-bottom: 20px;
+}
+
+.contact-item h4 {
+    color: #003366; /* Warna biru tua untuk judul item kontak */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #333; /* Warna teks biru tua */
+}
